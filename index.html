@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mahasamut Buranluk</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #173b6c;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #374151;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #173b6c;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #eaf2ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #173b6c;
+            margin-bottom: 12px;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #6b7280;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 12px 26px;
+            background: #173b6c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #173b6c;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+        }
+
+        .card h3 {
+            color: #173b6c;
+            margin-bottom: 10px;
+        }
+
+        /* Activities */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Portfolio */
+        .portfolio-page {
+            width: 100%;
+            max-width: 750px;
+            display: block;
+            margin: 25px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 35px;
+            background: #173b6c;
+            color: white;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 8px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MAHASAMUT</div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#activities">Activities</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div>
+            <h1>Mahasamut Buranluk</h1>
+            <h2>Portfolio</h2>
+
+            <p>
+                นักเรียนชั้นมัธยมศึกษาปีที่ 6
+                โรงเรียนกระทุ่มแบน “วิเศษสมุทคุณ”
+                แผนการเรียนวิทย์–คณิต เตรียมวิศวกรรมศาสตร์
+            </p>
+
+            <a href="#about" class="button">Explore My Portfolio</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+            <h3>สวัสดีครับ 👋</h3>
+
+            <p>
+                ผมนายมหาสมุทร บุราณลักษณ์
+                กำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาปีที่ 6
+                มีความสนใจด้านเศรษฐศาสตร์ การเงิน
+                และการบริหารจัดการ
+            </p>
+
+            <p>
+                มีความตั้งใจศึกษาต่อใน
+                คณะเศรษฐศาสตร์ สาขาวิชาเศรษฐศาสตร์สหกรณ์
+                มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตบางเขน
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="card">
+            <h3>โรงเรียนกระทุ่มแบน “วิเศษสมุทคุณ”</h3>
+            <p>ระดับชั้นมัธยมศึกษาปีที่ 4–6</p>
+            <p>แผนการเรียนวิทย์–คณิต เตรียมวิศวกรรมศาสตร์</p>
+        </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities">
+        <h2 class="section-title">Activities & Achievements</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>🏆 Economics</h3>
+                <p>
+                    เข้าร่วมการแข่งขันวิชาการด้านเศรษฐศาสตร์
+                    และพัฒนาทักษะการคิดวิเคราะห์อย่างเป็นระบบ
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔬 STEM Camp</h3>
+                <p>
+                    เข้าร่วมกิจกรรม STEM
+                    และฝึกการบูรณาการความรู้ด้านวิทยาศาสตร์
+                    เทคโนโลยี วิศวกรรมศาสตร์ และคณิตศาสตร์
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>❤️ Volunteer</h3>
+                <p>
+                    เข้าร่วมกิจกรรมจิตอาสา
+                    และช่วยเหลืองานภายในโรงเรียน
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Full Portfolio -->
+    <section id="portfolio">
+        <h2 class="section-title">My Portfolio</h2>
+
+        <p style="text-align:center;">
+            แฟ้มสะสมงานฉบับเต็มจำนวน 10 หน้า
+        </p>
+
+        <img src="1.jpg" class="portfolio-page" alt="Portfolio Page 1">
+        <img src="2.jpg" class="portfolio-page" alt="Portfolio Page 2">
+        <img src="3.jpg" class="portfolio-page" alt="Portfolio Page 3">
+        <img src="4.jpg" class="portfolio-page" alt="Portfolio Page 4">
+        <img src="5.jpg" class="portfolio-page" alt="Portfolio Page 5">
+        <img src="6.jpg" class="portfolio-page" alt="Portfolio Page 6">
+        <img src="7.jpg" class="portfolio-page" alt="Portfolio Page 7">
+        <img src="8.jpg" class="portfolio-page" alt="Portfolio Page 8">
+        <img src="9.jpg" class="portfolio-page" alt="Portfolio Page 9">
+        <img src="10.jpg" class="portfolio-page" alt="Portfolio Page 10">
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="card" style="text-align:center;">
+            <p><strong>Name:</strong> Mahasamut Buranluk</p>
+            <p><strong>Email:</strong> ma.buranluk@gmail.com</p>
+            <p><strong>Facebook:</strong> Mahasamut Buranluk</p>
+            <p><strong>Instagram:</strong> mahasamut_buranluk_chelsea_9</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mahasamut Buranluk | Portfolio</p>
+    </footer>
+
+</body>
+</html>
