@@ -134,6 +134,45 @@
         }
 
         .card {
+            /* Portfolio Gallery */
+
+.portfolio-gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+.portfolio-gallery img{
+
+width:100%;
+
+border-radius:15px;
+
+box-shadow:
+0 5px 18px rgba(0,0,0,.15);
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.portfolio-gallery img:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.25);
+
+}
+            
             background: white;
             padding: 30px;
             border-radius: 14px;
@@ -378,23 +417,40 @@
 
 <h2 class="section-title">
 
-🎯 Future Goal
-
-</h2>
+<h2>🎯 เป้าหมายในอนาคต (Future Goal)</h2>
 
 <div class="card">
 
+<h3>ภาษาไทย</h3>
+
 <p>
 
-My goal is to study at
+มีเป้าหมายศึกษาต่อ
+คณะเศรษฐศาสตร์
+สาขาเศรษฐศาสตร์สหกรณ์
+มหาวิทยาลัยเกษตรศาสตร์
 
+เพื่อพัฒนาความรู้ด้านเศรษฐศาสตร์
+การบริหาร การเงิน
+และนำความรู้ไปใช้ในการพัฒนาสังคม
+
+</p>
+
+<hr>
+
+<h3>English</h3>
+
+<p>
+
+My goal is to study
+at the Faculty of Economics,
 Kasetsart University,
+majoring in Cooperative Economics.
 
-Faculty of Economics,
-
-Major in Cooperative Economics.
-
-I hope to develop my knowledge in economics, management, and finance to contribute positively to society in the future.
+I hope to develop my knowledge
+in economics, management,
+and finance
+to contribute positively to society.
 
 </p>
 
@@ -480,11 +536,16 @@ I hope to develop my knowledge in economics, management, and finance to contribu
         <img src="8.jpg" class="portfolio-page" alt="Portfolio Page 8">
         <img src="9.jpg" class="portfolio-page" alt="Portfolio Page 9">
         <img src="10.jpg" class="portfolio-page" alt="Portfolio Page 10">
+
+        </div>
+        
     </section>
 
     <!-- Contact -->
     <section id="contact">
         <h2 class="section-title">Contact</h2>
+        
+        <div class="portfolio-gallery">
 
         <div class="card" style="text-align:center;">
             <p><strong>Name:</strong> Mahasamut Buranluk</p>
